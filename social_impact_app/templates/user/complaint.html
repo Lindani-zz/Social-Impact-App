@@ -1,0 +1,13 @@
+
+{% block content %}
+
+{% if latest_complaint_list %}
+    <ul>
+    {% for complaint in latest_complaint_list %}
+        <li><a href="/social_impact/{{ complaint.id }}/">{{ complaint.complaint_text }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No complaints are available.</p>
+{% endif %}
+{% endblock %}

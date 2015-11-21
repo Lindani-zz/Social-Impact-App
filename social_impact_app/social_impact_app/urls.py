@@ -17,5 +17,6 @@ from django.conf.urls import include, url
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^social_impact/', include('social_impact.urls')),
     url(r'^admin/', include(admin.site.urls)),
 ]

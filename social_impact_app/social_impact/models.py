@@ -18,8 +18,6 @@ class Complaint(models.Model):
         was_published_recently.short_description = 'Published recently?'
 
 
-
-
 class Answers(models.Model):
     complaint = models.ForeignKey(Complaint)
     choice_text = models.CharField(max_length=200)

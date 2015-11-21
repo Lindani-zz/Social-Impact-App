@@ -1,0 +1,6 @@
+<h1>{{ complaint.complaint_text }}</h1>
+<ul>
+{% for answers in complaint.answers_set.all %}
+    <li>{{ answers.choice_text }}</li>
+{% endfor %}
+</ul>

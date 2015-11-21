@@ -21,8 +21,7 @@ class ComplaintTestCase(TestCase):
 
         answers = complaint.answers_set.filter(id=1)
 
-        self.assertEqual(complaint.complaint_text, 'I feel like I have fever'
+        self.assertEqual(complaint.complaint_text, 'I feel ike I have fever'
                          'today')  # Testing for question being asked
         self.assertQuerysetEqual(answers, ['<Answers: Go to ther nearest'
                                            ' clinic to be diagnaised first>'])
-
